@@ -1,0 +1,103 @@
+[
+    {
+      "id": 1,
+      "name": "Grilled Chicken Salad",
+      "category": "Healthy",
+      "calories": 350,
+      "protein": 30,
+      "carbs": 10,
+      "fats": 15,
+      "image": "https://example.com/images/grilled_chicken_salad.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Avocado Toast",
+      "category": "Breakfast",
+      "calories": 250,
+      "protein": 7,
+      "carbs": 20,
+      "fats": 18,
+      "image": "https://example.com/images/avocado_toast.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Oatmeal with Berries",
+      "category": "Breakfast",
+      "calories": 280,
+      "protein": 8,
+      "carbs": 45,
+      "fats": 5,
+      "image": "https://example.com/images/oatmeal_berries.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Grilled Salmon with Quinoa",
+      "category": "Dinner",
+      "calories": 450,
+      "protein": 40,
+      "carbs": 35,
+      "fats": 20,
+      "image": "https://example.com/images/grilled_salmon_quinoa.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Fruit Smoothie",
+      "category": "Beverage",
+      "calories": 200,
+      "protein": 5,
+      "carbs": 40,
+      "fats": 2,
+      "image": "https://example.com/images/fruit_smoothie.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Pasta with Tomato Sauce",
+      "category": "Lunch",
+      "calories": 500,
+      "protein": 12,
+      "carbs": 80,
+      "fats": 10,
+      "image": "https://example.com/images/pasta_tomato_sauce.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Greek Yogurt with Nuts",
+      "category": "Snack",
+      "calories": 220,
+      "protein": 15,
+      "carbs": 12,
+      "fats": 10,
+      "image": "https://example.com/images/greek_yogurt_nuts.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Vegetable Stir Fry",
+      "category": "Vegetarian",
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fats": 8,
+      "image": "https://example.com/images/vegetable_stir_fry.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Chicken Wrap",
+      "category": "Lunch",
+      "calories": 420,
+      "protein": 35,
+      "carbs": 45,
+      "fats": 12,
+      "image": "https://example.com/images/chicken_wrap.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Protein Shake",
+      "category": "Beverage",
+      "calories": 300,
+      "protein": 25,
+      "carbs": 20,
+      "fats": 5,
+      "image": "https://example.com/images/protein_shake.jpg"
+    }
+  ]
+  
