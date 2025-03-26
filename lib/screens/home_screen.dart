@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:meal_pay/routes/router_config.dart';
 import 'package:meal_pay/services/set_login_preference.dart';
 import 'package:meal_pay/theme/app_colors.dart';
 
