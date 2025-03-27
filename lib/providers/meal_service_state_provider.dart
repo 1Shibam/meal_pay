@@ -20,3 +20,10 @@ class MealServiceNotifier extends StateNotifier<AsyncValue<List<MealModel>>> {
     }
   }
 }
+
+final mealsServiceStateNotiferProvider =
+    StateNotifierProvider<MealServiceNotifier, AsyncValue<List<MealModel>>>(
+        (ref) {
+  final meals = ref.watch(mealServiceProvider);
+  return MealServiceNotifier(meals);
+});
