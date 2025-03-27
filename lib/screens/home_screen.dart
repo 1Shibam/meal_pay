@@ -67,7 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         body: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 16.h)
+          padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 16.h)
               .copyWith(top: 40.h),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -98,10 +98,132 @@ class _HomeScreenState extends State<HomeScreen> {
                       ref.watch(mealsServiceStateNotiferProvider);
                   return mealAsyncData.when(
                       data: (mealData) {
-                        return ListView.builder(
-                          itemBuilder: (context, index) {
-                            return const Card();
-                          },
+                        return Expanded(
+                          child: ListView.builder(
+                            itemCount: mealData.length,
+                            itemBuilder: (context, index) {
+                              final singleMeal = mealData[index];
+                              return Card(
+                                color: AppColors.primaryColorDark,
+                                child: Padding(
+                                  padding: EdgeInsets.symmetric(
+                                      vertical: 8.h, horizontal: 8.w),
+                                  child: Column(
+                                    children: [
+                                      Row(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Expanded(
+                                            flex: 2,
+                                            child: ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(100.r),
+                                              child: Image.network(
+                                                fit: BoxFit.fill,
+                                                singleMeal.imageUrl,
+                                                width: 120.w,
+                                                height: 120.h,
+                                              ),
+                                            ),
+                                          ),
+                                          Expanded(
+                                              child: SizedBox(
+                                                  height: 120.h,
+                                                  child: const VerticalDivider(
+                                                    color:
+                                                        AppColors.subTextColor,
+                                                  ))),
+                                          Flexible(
+                                              flex: 2,
+                                              child: Column(
+                                                mainAxisSize: MainAxisSize.min,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.start,
+                                                children: [
+                                                  Flexible(
+                                                    child: ListTile(
+                                                      contentPadding:
+                                                          EdgeInsets.zero,
+                                                      minVerticalPadding: 0,
+                                                      title: Text(
+                                                        singleMeal.name,
+                                                        style:
+                                                            AppTextStyles.body,
+                                                      ),
+                                                    ),
+                                                  ),
+                                                  Flexible(
+                                                    child: ListTile(
+                                                      minVerticalPadding: 0,
+                                                      contentPadding:
+                                                          EdgeInsets.zero,
+                                                      title: Text(
+                                                        '${singleMeal.calories.toString()} cals',
+                                                        style:
+                                                            AppTextStyles.body,
+                                                      ),
+                                                    ),
+                                                  ),
+                                                  Flexible(
+                                                    child: ListTile(
+                                                      minVerticalPadding: 0,
+                                                      contentPadding:
+                                                          EdgeInsets.zero,
+                                                      title: Text(
+                                                        '${singleMeal.protein.toString()}g Protein',
+                                                        style:
+                                                            AppTextStyles.body,
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ))
+                                        ],
+                                      ),
+                                      GestureDetector(
+                                        onTap: () {},
+                                        child: Container(
+                                          width: double.infinity,
+                                          padding: EdgeInsets.all(12.r),
+                                          decoration: BoxDecoration(
+                                              borderRadius:
+                                                  BorderRadius.circular(12.r),
+                                              color: AppColors.primaryColor),
+                                          child: Row(
+                                            children: [
+                                              Expanded(
+                                                  flex: 2,
+                                                  child: Text(
+                                                    'price ₹/-',
+                                                    style: AppTextStyles.button,
+                                                  )),
+                                              Expanded(
+                                                  child: SizedBox(
+                                                      height: 24.h,
+                                                      child:
+                                                          const VerticalDivider(
+                                                        color:
+                                                            AppColors.textColor,
+                                                      ))),
+                                              Expanded(
+                                                  flex: 2,
+                                                  child: Text(
+                                                    'Add to cart',
+                                                    style: AppTextStyles.button,
+                                                  ))
+                                            ],
+                                          ),
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              );
+                            },
+                          ),
                         );
                       },
                       error: (error, stackTrace) {
