@@ -7,7 +7,7 @@
       "protein": 30,
       "carbs": 10,
       "fats": 15,
-      "image": "https://example.com/images/grilled_chicken_salad.jpg"
+      "image": "https://imgs.search.brave.com/xK8aSJn9YPC4HcUgflO3pIx_YEP75t91oTjPqOblC34/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTIw/MDUxODUvcGhvdG8v/d2FybS1jaGlja2Vu/LXNhbGFkLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1rbnF1/WUJDT0lDNWVHYkFC/NUNpVmZaVmppX3hS/dkVHRjZCRWstX0NY/TEkwPQ"
     },
     {
       "id": 2,
@@ -17,7 +17,7 @@
       "protein": 7,
       "carbs": 20,
       "fats": 18,
-      "image": "https://example.com/images/avocado_toast.jpg"
+      "image": "https://imgs.search.brave.com/RGzbbyMuTl9UM2X6iY-i-T_ZXyV2mr1T1ttR8ScAwk8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA5LzU2LzMwLzc0/LzM2MF9GXzk1NjMw/NzQzMl9hVlZkWmZ6/YVcwQnBvNFJBTFBL/S0lVRWZ6ZllLbVNN/NC5qcGc"
     },
     {
       "id": 3,
@@ -27,7 +27,7 @@
       "protein": 8,
       "carbs": 45,
       "fats": 5,
-      "image": "https://example.com/images/oatmeal_berries.jpg"
+      "image": "https://imgs.search.brave.com/U78AuTwuC-cf7IMnNIoDQIRvYeemjsqGOddPTKJMBx0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9iYXJl/ZmVldGludGhla2l0/Y2hlbi5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjIvMDIv/Qmx1ZWJlcnJpZXMt/YW5kLUNyZWFtLU9h/dG1lYWwtZWRpdC00/LTEtb2YtMS0xMDI0/eDczMi5qcGc"
     },
     {
       "id": 4,
@@ -37,7 +37,7 @@
       "protein": 40,
       "carbs": 35,
       "fats": 20,
-      "image": "https://example.com/images/grilled_salmon_quinoa.jpg"
+      "image": "https://imgs.search.brave.com/apwtEyn4ngcNX7Ch9A77b5HOkObpCpWjBaP4AHYqjIs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pay5p/bWFnZWtpdC5pby9t/dW5jaGVyeS9yZWNp/cGVzL3RyOnctMzIw/L2dyaWxsZWQtcGVz/dG8tc2FsbW9uLXF1/aW5vYS1ib3dsLmpw/ZWc"
     },
     {
       "id": 5,
@@ -47,7 +47,7 @@
       "protein": 5,
       "carbs": 40,
       "fats": 2,
-      "image": "https://example.com/images/fruit_smoothie.jpg"
+      "image": "https://imgs.search.brave.com/BGErGUT4KHUmbWvCtag03npNBy3PchAP9zaM9-VEEw0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTcz/NTAxOTUwL3Bob3Rv/L2ZydWl0LXNtb290/aGllcy5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9Z1Y0NkFY/cjJxRE82NlpmaTVG/TjBqWThRbjQxazZQ/a1MtTTg1ekVWZWo4/RT0"
     },
     {
       "id": 6,
@@ -57,7 +57,7 @@
       "protein": 12,
       "carbs": 80,
       "fats": 10,
-      "image": "https://example.com/images/pasta_tomato_sauce.jpg"
+      "image": "https://imgs.search.brave.com/RkQpP_Wbk_4XyCVtDQobBJy2JZ1DhvC_WBPwUqX6NT4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YnVkZ2V0Ynl0ZXMu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDE2LzA3L1Bhc3Rh/LXdpdGgtQnV0dGVy/LVRvbWF0by1TYXVj/ZS1hbmQtVG9hc3Rl/ZC1CcmVhZC1DcnVt/YnMtdXRlbnNpbHMu/anBn"
     },
     {
       "id": 7,
@@ -67,7 +67,7 @@
       "protein": 15,
       "carbs": 12,
       "fats": 10,
-      "image": "https://example.com/images/greek_yogurt_nuts.jpg"
+      "image": "https://imgs.search.brave.com/9RgpZquKcuSCnhIMCk2-prSBlxyfNQd22Yrbx-KGwow/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZWF0dGhpc211/Y2guY29tL21lZC85/MzE3ODNfdGFiaXRo/YXJ3aGVlbGVyXzg1/ZDRkNGU4LWJkNWEt/NDZlNy1hNjdhLTcx/MWEwMzY3NmIwMS5q/cGc"
     },
     {
       "id": 8,
@@ -77,7 +77,7 @@
       "protein": 12,
       "carbs": 40,
       "fats": 8,
-      "image": "https://example.com/images/vegetable_stir_fry.jpg"
+      "image": "https://imgs.search.brave.com/XsgunmOx2CtdLXDjdhlGQRtnsBx8EksFu0wVSUg6zqc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAxLzA0LzEzLzU2/LzM2MF9GXzEwNDEz/NTYzNl9iSDBsM1Nj/S3JOZWRDaWtiSXNF/Z1I0OUk2cGhocHp1/SC5qcGc"
     },
     {
       "id": 9,
@@ -87,7 +87,7 @@
       "protein": 35,
       "carbs": 45,
       "fats": 12,
-      "image": "https://example.com/images/chicken_wrap.jpg"
+      "image": "https://imgs.search.brave.com/5uM99CRFaTjtt5JGFoa73j_op6L_UWMXvKr1OfX7uus/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9jaGlja2VuLXdy/YXAtcm9sbC1kdXJ1/bS1kb25lci1rZWJh/Yi13aXRoLW1lYXQt/dmVnZXRhYmxlLXNh/bGFkLXdvb2Rlbi1i/YWNrZ3JvdW5kLXRv/cC12aWV3Xzg5ODE2/LTQyODk1LmpwZz9z/ZW10PWFpc19oeWJy/aWQ"
     },
     {
       "id": 10,
@@ -97,7 +97,7 @@
       "protein": 25,
       "carbs": 20,
       "fats": 5,
-      "image": "https://example.com/images/protein_shake.jpg"
+      "image": "https://imgs.search.brave.com/mmABe4aNHjHmLzaR9yYni43HJpgVES_LKIxL58NpQ9k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzEyLzk2Lzk1LzUx/LzM2MF9GXzEyOTY5/NTUxNjBfMGd5WE5j/ZUVyNXNBaHJNTlNn/aU9xWVlXUHg4Y0p1/d0MuanBn"
     }
   ]
   
