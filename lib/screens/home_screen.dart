@@ -2,13 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
+import 'package:meal_pay/models/meal_model.dart';
 import 'package:meal_pay/providers/meal_service_state_provider.dart';
 import 'package:meal_pay/services/set_login_preference.dart';
 import 'package:meal_pay/theme/app_colors.dart';
 import 'package:meal_pay/widgets/custom_snackbar.dart';
 
+//search query state provider for filtering
 
-//search query state provider for filtering 
+final searchQueryProvider = StateProvider<String>((ref) => '');
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -75,11 +78,17 @@ class _HomeScreenState extends State<HomeScreen> {
                         ref.watch(mealsServiceStateNotiferProvider);
                     return mealAsyncData.when(
                         data: (mealData) {
+                          final searchQuery =
+                              ref.watch(searchQueryProvider).toLowerCase();
+                          List<MealModel> filteredList = mealData
+                              .where((meal) =>
+                                  meal.name.toLowerCase().contains(searchQuery))
+                              .toList();
                           return Expanded(
                             child: ListView.builder(
-                              itemCount: mealData.length,
+                              itemCount: filteredList.length,
                               itemBuilder: (context, index) {
-                                final singleMeal = mealData[index];
+                                final singleMeal = filteredList[index];
                                 return Padding(
                                   padding: EdgeInsets.symmetric(vertical: 4.h),
                                   child: Card(
@@ -247,14 +256,30 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 }
 
-class HomeScreenSearhBar extends StatelessWidget {
+class HomeScreenSearhBar extends ConsumerStatefulWidget {
   const HomeScreenSearhBar({
     super.key,
   });
 
   @override
+  ConsumerState<HomeScreenSearhBar> createState() => _HomeScreenSearhBarState();
+}
+
+class _HomeScreenSearhBarState extends ConsumerState<HomeScreenSearhBar> {
+  TextEditingController searchController = TextEditingController();
+  @override
+  void dispose() {
+    searchController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return SearchBar(
+      controller: searchController,
+      onChanged: (value) {
+        ref.read(searchQueryProvider.notifier).state = value.trim();
+      },
       textStyle: WidgetStatePropertyAll(
           AppTextStyles.button.copyWith(color: AppColors.primaryColorDark)),
       hintText: 'Search Meal',
