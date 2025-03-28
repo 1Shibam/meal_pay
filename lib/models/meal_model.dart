@@ -6,6 +6,7 @@ class MealModel {
   final int protein;
   final int carbs;
   final int fats;
+  final double price;
   final String imageUrl;
 
   MealModel(
@@ -16,6 +17,7 @@ class MealModel {
       required this.protein,
       required this.carbs,
       required this.fats,
+      required this.price,
       required this.imageUrl});
 
   factory MealModel.fromJson(Map<String, dynamic> json) {
@@ -27,6 +29,7 @@ class MealModel {
         protein: json['protein'],
         carbs: json['carbs'],
         fats: json['fats'],
+        price: json['price'],
         imageUrl: json['image']);
   }
   Map<String, dynamic> toJson() {
@@ -38,6 +41,7 @@ class MealModel {
       "protein": protein,
       "carbs": carbs,
       "fats": fats,
+      'price': price,
       "image": imageUrl
     };
   }
