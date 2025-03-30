@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "939933902010",
+    "project_id": "fit-track-444",
+    "storage_bucket": "fit-track-444.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939933902010:android:44ee50aef5c24d32f38e83",
+        "android_client_info": {
+          "package_name": "com.shiavmApps.meal_pay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939933902010-j0fqkmqdngbfs6hgci4j9qvn7qb5bueh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPNFENCUe1vGaSqkm1zYRbS_jvKsqetxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939933902010-j0fqkmqdngbfs6hgci4j9qvn7qb5bueh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "939933902010-1jrtgetj09er81rvjs5ea69q2b1la7r1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.shivamm.beFit"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939933902010:android:0f0056f59c3eab88f38e83",
+        "android_client_info": {
+          "package_name": "com.shivamm.be_fit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939933902010-rqbj3krr17k6kbimcoishibn9jeqccfl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shivamm.be_fit",
+            "certificate_hash": "7d65ce5fff347a49c6812a9a9b4e0bd24fc01ceb"
+          }
+        },
+        {
+          "client_id": "939933902010-j0fqkmqdngbfs6hgci4j9qvn7qb5bueh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPNFENCUe1vGaSqkm1zYRbS_jvKsqetxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939933902010-j0fqkmqdngbfs6hgci4j9qvn7qb5bueh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "939933902010-1jrtgetj09er81rvjs5ea69q2b1la7r1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.shivamm.beFit"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

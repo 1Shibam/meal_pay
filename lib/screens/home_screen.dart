@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:meal_pay/models/meal_model.dart';
 import 'package:meal_pay/providers/meal_service_state_provider.dart';
+import 'package:meal_pay/services/razor_pay_service.dart';
 import 'package:meal_pay/services/set_login_preference.dart';
 import 'package:meal_pay/theme/app_colors.dart';
 import 'package:meal_pay/widgets/custom_snackbar.dart';
@@ -154,25 +155,25 @@ class _HomeScreenState extends State<HomeScreen> {
                                                         style: AppTextStyles
                                                             .button,
                                                       ),
-                                                      Divider(),
+                                                      const Divider(),
                                                       Text(
                                                         '${singleMeal.calories.toString()} cals',
                                                         style:
                                                             AppTextStyles.body,
                                                       ),
-                                                      Divider(),
+                                                      const Divider(),
                                                       Text(
                                                         "${singleMeal.protein.toString()}g Protein",
                                                         style:
                                                             AppTextStyles.body,
                                                       ),
-                                                      Divider(),
+                                                      const Divider(),
                                                       Text(
                                                         "${singleMeal.carbs.toString()}g Carbs",
                                                         style:
                                                             AppTextStyles.body,
                                                       ),
-                                                      Divider(),
+                                                      const Divider(),
                                                       Text(
                                                         "${singleMeal.fats.toString()}g fats",
                                                         style:
@@ -185,44 +186,56 @@ class _HomeScreenState extends State<HomeScreen> {
                                           SizedBox(
                                             height: 12.h,
                                           ),
-                                          GestureDetector(
-                                            onTap: () {},
-                                            child: Container(
-                                              width: double.infinity,
-                                              padding: EdgeInsets.all(12.r),
-                                              decoration: BoxDecoration(
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          12.r),
-                                                  color:
-                                                      AppColors.primaryColor),
-                                              child: Row(
-                                                children: [
-                                                  Expanded(
-                                                      flex: 2,
-                                                      child: Text(
-                                                        '${singleMeal.price}\$',
-                                                        style: AppTextStyles
-                                                            .button,
-                                                      )),
-                                                  Expanded(
-                                                      child: SizedBox(
-                                                          height: 24.h,
-                                                          child:
-                                                              const VerticalDivider(
-                                                            color: AppColors
-                                                                .textColor,
-                                                          ))),
-                                                  Expanded(
-                                                      flex: 2,
-                                                      child: Text(
-                                                        'Add to cart',
-                                                        style: AppTextStyles
-                                                            .button,
-                                                      ))
-                                                ],
-                                              ),
-                                            ),
+                                          Consumer(
+                                            builder: (context, ref, child) {
+                                              final payService = ref.watch(
+                                                  razorPayServiceProvider);
+                                              return GestureDetector(
+                                                onTap: () {
+                                                  payService.startPayment(
+                                                      amount: singleMeal.price,
+                                                      contact: '+91-XXXXXXXXXX',
+                                                      email:
+                                                          'testpay@gmail.com');
+                                                },
+                                                child: Container(
+                                                  width: double.infinity,
+                                                  padding: EdgeInsets.all(12.r),
+                                                  decoration: BoxDecoration(
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              12.r),
+                                                      color: AppColors
+                                                          .primaryColor),
+                                                  child: Row(
+                                                    children: [
+                                                      Expanded(
+                                                          flex: 2,
+                                                          child: Text(
+                                                            '${singleMeal.price}\$',
+                                                            style: AppTextStyles
+                                                                .button,
+                                                          )),
+                                                      Expanded(
+                                                          child: SizedBox(
+                                                              height: 24.h,
+                                                              child:
+                                                                  const VerticalDivider(
+                                                                color: AppColors
+                                                                    .textColor,
+                                                              ))),
+                                                      Expanded(
+                                                          flex: 2,
+                                                          child: Text(
+                                                            'Order Now',
+                                                            style: AppTextStyles
+                                                                .button,
+                                                          ))
+                                                    ],
+                                                  ),
+                                                ),
+                                              );
+                                            },
                                           )
                                         ],
                                       ),

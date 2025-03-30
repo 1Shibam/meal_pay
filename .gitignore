@@ -44,3 +44,4 @@ app.*.map.json
 
 # IGNORES -
 .env
+lib/firebase_options.dart

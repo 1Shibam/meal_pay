@@ -43,7 +43,7 @@ class RazorPayService {
       'key': razorPayKey,
       'amount': (amount * 100).toInt(), // Razorpay uses paise (multiply by 100)
       'currency': 'INR',
-      'name': 'Your App Name',
+      'name': 'MealPay',
       'description': 'Payment for order',
       'prefill': {
         'contact': contact,
@@ -81,3 +81,4 @@ class RazorPayService {
   }
 }
 
+final razorPayServiceProvider = Provider<RazorPayService>((ref) => RazorPayService());
